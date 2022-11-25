@@ -1,0 +1,124 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "defaultTitle",
+    "description": "defaultDescription",
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "https://prod-69.westeurope.logic.azure.com:443"
+    }
+  ],
+  "paths": {
+    "/workflows/8f1d4af5fd7341898ef6def22a0c9e41/triggers/manual/paths/invoke": {
+      "post": {
+        "description": "Auto generated using Swagger Inspector",
+        "parameters": [
+          {
+            "name": "sig",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "48G8zmBk4oZ934jrVkcM3-FnMDJDxGoyfc_wSY4Hisk "
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "2016-06-01"
+          },
+          {
+            "name": "sv",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1.0"
+          },
+          {
+            "name": "sp",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "%2Ftriggers%2Fmanual%2Frun"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/paths_invoke_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n  \"ClientName\": \"string\",\r\n  \"ProjectName\": \"string\",\r\n  \"QuoteRef\": \"string\",\r\n  \"QuoteRefTracker\": \"string\"\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "text/plain; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://prod-69.westeurope.logic.azure.com:443"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://prod-69.westeurope.logic.azure.com:443"
+        }
+      ]
+    }
+  },
+  "components": {
+    "schemas": {
+      "paths_invoke_body": {
+        "type": "object",
+        "properties": {
+          "ClientName": {
+            "type": "string"
+          },
+          "QuoteRef": {
+            "type": "string"
+          },
+          "ProjectName": {
+            "type": "string"
+          },
+          "QuoteRefTracker": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
